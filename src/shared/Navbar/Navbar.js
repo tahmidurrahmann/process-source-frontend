@@ -14,30 +14,30 @@ export default function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 200) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            if (offset > 200) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
 
-    window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const navItems = (
-        <div className="flex flex-col items-center justify-center gap-6 py-24 my-6 lg:flex-row lg:my-0 lg:gap-2 xl:gap-6 md:py-36 lg:py-0 text-sm">
-            <Link onClick={() => setIsOpen(false)} className={`link ${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-medium lg:text-white px-3 py-1 rounded-lg' : 'text-white hover:text-[#0C71C3]'}`} href="/">
-                Home
+        <div className="flex flex-col items-center justify-center gap-6 py-24 my-6 lg:flex-row lg:my-0 lg:gap-2 xl:gap-6 md:py-36 lg:py-0 text-xs">
+            <Link onClick={() => setIsOpen(false)} className={`link ${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/">
+                HOME
             </Link>
-            <Link onClick={() => setIsOpen(false)} className={`link ${pathname === '/about' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-medium lg:text-white px-3 py-1 rounded-lg' : 'text-white hover:text-[#0C71C3]'}`} href="/about">
-                About
+            <Link onClick={() => setIsOpen(false)} className={`link ${pathname === '/about' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/about">
+                ABOUT
             </Link>
         </div>
     );
