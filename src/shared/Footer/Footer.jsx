@@ -5,7 +5,7 @@ import logo from "../../assets/logooo.png"
 const Footer = () => {
     return (
         <div className="pt-20">
-            <footer className="footer mt-20">
+            <footer className="footerr mt-20">
                 <div className="waves">
                     <div className="wave" id="wave1"></div>
                     <div className="wave" id="wave2"></div>
