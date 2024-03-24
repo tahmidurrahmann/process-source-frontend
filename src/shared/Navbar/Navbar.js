@@ -4,12 +4,11 @@ import Drawer from "./Drawer";
 import "./styles.css";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
-import logo from "../../assets/logo1.png"
+import logooo from "../../assets/logooo.png"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { MdMenu } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
-import { FaAngleLeft } from "react-icons/fa6";
 
 export default function App() {
     const pathname = usePathname();
@@ -54,10 +53,12 @@ export default function App() {
     }, []);
 
     const navItems = (
-        <div className="flex flex-col items-center justify-center gap-6 py-24 my-6 lg:flex-row lg:my-0 lg:gap-2 xl:gap-6 md:py-36 lg:py-0 lg:text-xs">
-            <Link onClick={() => setIsOpen(false)} className={`${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/">
-                HOME
-            </Link>
+        <div className="flex flex-col items-center lg:justify-center gap-2 lg:flex-row lg:gap-2 py-12 xl:gap-6 text-sm lg:text-xs">
+            <div className="w-full">
+                <Link onClick={() => setIsOpen(false)} className={`${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white lg:px-[15px] lg:py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/">
+                    HOME
+                </Link>
+            </div>
             <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
                 <Link href="/services" tabIndex={0} role="button" className={`${pathname === '/services' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`}>Services</Link>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-base-100 text-black lg:w-48 p-4 font-semibold space-y-4">
@@ -89,19 +90,19 @@ export default function App() {
                     </Link>
                 </ul>
             </div>
-            <div className="text-white inline-block lg:hidden">
+            <div className="text-white inline-block lg:hidden w-full">
                 {menuItems.map((menuItem, index) => (
                     <div className="py-4" key={index}>
-                        <div className="flex items-center justify-center gap-2" onClick={() => toggleMenu(index)}>
+                        <div className="flex items-center justify-between" onClick={() => toggleMenu(index)}>
                             <span>{menuItem.label}</span>
-                            <div>{openMenuIndex === index ? <FaAngleDown /> : <FaAngleLeft />}</div>
+                            <div>{openMenuIndex === index ? <FaAngleDown /> : <FaAngleDown />}</div>
                         </div>
                         {openMenuIndex === index && (
                             <div>
                                 <ul>
                                     {menuItem.links.map((item, subIndex) => (
-                                        <li className="pt-6 text-center" key={subIndex}>
-                                            <Link className={`${pathname === `${item.link}` ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} onClick={() => setIsOpen(false)} href={item.link}>{item.label}</Link>
+                                        <li className="pt-6" key={subIndex}>
+                                            <Link className={`${pathname === `${item.link}` ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white rounded text-left' : 'text-left text-white font-medium hover:text-[#0C71C3]'}`} onClick={() => setIsOpen(false)} href={item.link}>{item.label}</Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -116,26 +117,26 @@ export default function App() {
     return (
         <div className={`fixed z-10 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
             <div className="flex justify-between items-center xl:px-12 lg:px-8 px-4 2xl:px-16">
-                <Image src={logo} alt="logo" width={40} />
+                <Image src={logooo} alt="logo" width={60} />
                 <div className="hidden lg:inline-block">
                     {navItems}
                 </div>
-                <button className="inline-block lg:hidden" type="button" onClick={() => setIsOpen(!isOpen)}>
+                <button className="lg:hidden flex" type="button" onClick={() => setIsOpen(!isOpen)}>
                     <MdMenu className="text-white" size={32} />
                 </button>
                 <Drawer
                     isOpen={isOpen}
                     onClose={() => setIsOpen(false)}
-                    position="top"
+                    position="left"
                 >
-                    <div className="w-screen demo-content">
-                        <span
-                            type="button"
-                            className="hover:scale-105 flex justify-end"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            <IoMdClose className="text-white" size={30} />
-                        </span>
+                    <div className="w-full demo-content">
+                        <div className="flex justify-between gap-40">
+                            <Image src={logooo} alt="logooo" width={80} />
+                            <div className="hover:scale-105"
+                                onClick={() => setIsOpen(false)}>
+                                <IoMdClose className="text-white -mt-1" size={24} />
+                            </div>
+                        </div>
                         {navItems}
                     </div>
                 </Drawer>

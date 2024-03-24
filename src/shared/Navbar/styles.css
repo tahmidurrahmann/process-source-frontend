@@ -40,7 +40,10 @@ input {
 .drawer.left {
     top: 0;
     left: 0;
-    transform: translateX(-105%);
+    transform: translateX(-100%);
+    background-color: black;
+    height: 100%;
+    width: 300px;
 }
 
 .drawer.right {
@@ -53,7 +56,6 @@ input {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     transform: translateY(-100%);
     background-color: black;
     height: 100%;
