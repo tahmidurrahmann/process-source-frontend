@@ -7,7 +7,7 @@ import Link from "next/link";
 import logooo from "../../assets/logooo.png"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { MdMenu } from "react-icons/md";
+import { CgMenuRightAlt } from "react-icons/cg";
 import { FaAngleDown } from "react-icons/fa6";
 
 export default function App() {
@@ -117,12 +117,12 @@ export default function App() {
     return (
         <div className={`fixed z-10 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
             <div className="flex justify-between items-center xl:px-12 lg:px-8 px-4 2xl:px-16">
-                <Link href="/"><Image src={logooo} alt="logo" width={60} /></Link>
+                <Link href="/"><Image src={logooo} alt="logo" width={90} /></Link>
                 <div className="hidden lg:inline-block">
                     {navItems}
                 </div>
                 <button className="lg:hidden flex" type="button" onClick={() => setIsOpen(!isOpen)}>
-                    <MdMenu className="text-white" size={32} />
+                    <CgMenuRightAlt className="text-white" size={32} />
                 </button>
                 <Drawer
                     isOpen={isOpen}
