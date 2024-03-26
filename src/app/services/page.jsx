@@ -2,6 +2,11 @@ import Link from "next/link";
 import "./service.css";
 import Image from "next/image"
 
+export const metadata = {
+    title: "Service | Process Source",
+    description: "Process Source Service Page",
+  };
+
 const Services = () => {
     return (
         <div>

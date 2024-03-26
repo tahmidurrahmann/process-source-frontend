@@ -36,7 +36,7 @@ const Engagement = () => {
                         <div className="absolute bottom-0 space-y-2 p-10 md:p-16 lg:p-10 xl:p-20 bg-gradient-to-b from-transparent via-[#15151583] to-black w-full h-full">
                             <h1 className="font-extrabold text-2xl xl:text-4xl">Acquire@Home</h1>
                             <p className="text-[10px] lg:text-xs xl:text-base">Our Work from Home capability is enabled by VDI solutions that can be deployed on Process Source, client or employees' BYO devices utilizing a secure environment.</p>
-                            <Link href="/acquire"><button className="bg-[#0C71C3] text-sm xl:text-base hover:bg-transparent hover:border-2 my-4 px-5 py-2 rounded-full font-bold uppercase -mb-8">Go Remote</button></Link>
+                            <Link href="/process"><button className="bg-[#0C71C3] text-sm xl:text-base hover:bg-transparent hover:border-2 my-4 px-5 py-2 rounded-full font-bold uppercase -mb-8">Go Remote</button></Link>
                         </div>
                     </div>
                     <div className="relative">

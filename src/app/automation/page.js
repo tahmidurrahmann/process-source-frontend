@@ -5,6 +5,11 @@ import ai3 from "../../assets/ai3.png";
 import ai4 from "../../assets/ai4.png";
 import Image from "next/image";
 
+export const metadata = {
+    title: "Automation & AI | Process Source",
+    description: "Process Source Automation & AI Page",
+};
+
 const Automation = () => {
     return (
         <div>

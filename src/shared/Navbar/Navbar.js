@@ -24,7 +24,7 @@ export default function App() {
 
     const menuItems = [
         { label: 'Services', links: [{ label: 'Contact Centre', link: '/contactCentre' }, { label: 'Back Office', link: '/backOffice' }, { label: 'Automation & AI', link: '/automation' }] },
-        { label: 'Models', links: [{ label: 'Comprehensive', link: '/comprehensive' }, { label: 'Co-Sourcing', link: '/coSourcing' }, { label: 'ACQUIRE@HOME', link: '/acquire' }, { label: 'WORKSPACES', link: '/workspaces' }] }
+        { label: 'Models', links: [{ label: 'Comprehensive', link: '/comprehensive' }, { label: 'Co-Sourcing', link: '/coSourcing' }, { label: 'PROCESS@HOME', link: '/process' }, { label: 'WORKSPACES', link: '/workspaces' }] }
     ];
 
     useEffect(() => {
@@ -82,8 +82,8 @@ export default function App() {
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/coSourcing">
                         Co-Sourcing
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/acquire">
-                        ACQUIRE@HOME
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/process">
+                        PROCESS@HOME
                     </Link>
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/workspaces">
                         WORKSPACES

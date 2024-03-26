@@ -7,6 +7,11 @@ import co3 from "../../assets/co3.png";
 import co4 from "../../assets/co4.png";
 import co5 from "../../assets/co5.png";
 
+export const metadata = {
+    title: "Co Sourcing | Process Source",
+    description: "Process Source Co Sourcing Page",
+};
+
 const CoSourcing = () => {
     return (
         <div>

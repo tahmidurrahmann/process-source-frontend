@@ -1,5 +1,10 @@
 import "./workspaces.css"
 
+export const metadata = {
+    title: "Workspaces | Process Source",
+    description: "Process Source Workspaces Page",
+};
+
 const WorkSpaces = () => {
     return (
         <div>

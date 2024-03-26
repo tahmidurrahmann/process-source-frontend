@@ -8,6 +8,11 @@ import contact5 from "../../assets/contact5.png"
 import contact6 from "../../assets/contact6.png"
 import { FaCheck } from "react-icons/fa";
 
+export const metadata = {
+    title: "Contact Centre | Process Source",
+    description: "Process Source Contact Centre Page",
+  };
+
 const ContactCentre = () => {
     return (
         <div>

@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import "./models.css";
 
+export const metadata = {
+    title: "Models | Process Source",
+    description: "Process Source Models Page",
+};
+
 const ModelsPage = () => {
     return (
         <div>
@@ -19,7 +24,7 @@ const ModelsPage = () => {
                     </div>
                     <div className="flex flex-col items-center gap-4">
                         <Image src="https://acquirebpo.com/wp-content/uploads/img/ACQ-Acquire@Home-icon-white.png" width={90} height={90} alt="alt" />
-                        <Link href="/acquire"><button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16 2xl:mx-0">acquire@home</button></Link>
+                        <Link href="/process"><button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16 2xl:mx-0">process@home</button></Link>
                     </div>
                     <div className="flex flex-col items-center gap-4">
                         <Image src="https://acquirebpo.com/wp-content/uploads/img/ACQ-Workspaces-icon-white.png" width={90} height={90} alt="alt" />
@@ -48,7 +53,7 @@ const ModelsPage = () => {
                     <h1 className="text-left font-black text-xl md:text-2xl lg:text-3xl pt-52 xl:pt-72 text-[#F9F9F9AB] px-12 md:px-16 md:w-3/4">Outsource without limitations</h1>
                     <p className="text-[27px] md:text-4xl font-black pt-4 lg:text-5xl px-12 md:px-16 md:w-3/4 lg:w-3/5">Remote staffing solutions for business continuity</p>
                     <p className="text-sm pt-4 lg:text-xl px-12 md:px-16 md:w-3/4 xl:w-1/2">Build your virtual contact centre or back-office team with talented resources, secure technology and compliant processes—from anywhere.</p>
-                    <Link href="/acquire"><button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16">learn more</button></Link>
+                    <Link href="/process"><button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16">learn more</button></Link>
                 </div>
             </div>
             <div className="background11 min-h-screen text-white">

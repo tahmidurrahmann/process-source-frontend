@@ -6,6 +6,11 @@ import contact2 from "../../assets/contact2.png"
 import contact3 from "../../assets/contact3.png"
 import backOffice from "../../assets/backOffice.png"
 
+export const metadata = {
+    title: "Back Office | Process Source",
+    description: "Process Source Back Office Page",
+};
+
 const BackOffice = () => {
     return (
         <div>

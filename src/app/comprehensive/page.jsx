@@ -7,6 +7,11 @@ import comprehensive5 from "../../assets/comprehensive5.png";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 
+export const metadata = {
+    title: "Comprehensive | Process Source",
+    description: "Process Source Comprehensive Page",
+};
+
 const ComprehensivePage = () => {
     return (
         <div>
