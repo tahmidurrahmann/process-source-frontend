@@ -53,7 +53,7 @@ export default function App() {
     }, []);
 
     const navItems = (
-        <div className="flex flex-col items-center lg:justify-center gap-2 lg:flex-row lg:gap-2 py-12 xl:gap-6 text-sm lg:text-xs">
+        <div className="flex flex-col items-center lg:justify-center gap-2 lg:flex-row lg:gap-2 py-12 lg:py-0 xl:gap-6 text-sm lg:text-xs">
             <div className="w-full">
                 <Link onClick={() => setIsOpen(false)} className={`${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white lg:px-[15px] lg:py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/">
                     HOME

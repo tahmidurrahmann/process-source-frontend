@@ -1,4 +1,30 @@
 {
-  "extends": "next/core-web-vitals",
-  "react/no-unescaped-entities": "off",
+  "extends": [
+    "next",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Next.js doesn't require importing React in each file
+    "react/jsx-uses-react": "off", // Next.js doesn't require importing React in each file
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], // Allow JSX in .js files
+    "react/prop-types": "off", // If you're using TypeScript, prop-types are unnecessary
+    "react/no-unescaped-entities": "off" // If you're sure about this rule
+  }
 }
