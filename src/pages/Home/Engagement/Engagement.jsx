@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Engagement = () => {
     return (
-        <div className="bg-[#003468] -mt-[6px]">
+        <div className="-mt-[6px]">
             <div className="text-white max-w-screen-2xl ml-auto">
                 <div className="px-12 2xl:px-0">
                     <h1 className="font-extrabold text-2xl xl:text-5xl pt-12 pb-4">Find out how we can drive success for you</h1>

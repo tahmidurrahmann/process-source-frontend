@@ -55,17 +55,17 @@ export default function App() {
     const navItems = (
         <div className="flex flex-col items-center lg:justify-center gap-2 lg:flex-row lg:gap-2 py-12 lg:py-0 xl:gap-6 text-sm lg:text-xs">
             <div className="w-full">
-                <Link onClick={() => setIsOpen(false)} className={`${pathname === '/' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white lg:px-[15px] lg:py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`} href="/">
-                    HOME
+                <Link onClick={() => setIsOpen(false)} className="text-white hover:text-[#0C71C3] font-medium" href="/">
+                    Home
                 </Link>
             </div>
             <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
-                <Link href="/services" tabIndex={0} role="button" className={`${pathname === '/services' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`}>Services</Link>
+                <Link href="/services" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Services</Link>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-base-100 text-black lg:w-48 p-4 font-semibold space-y-4">
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/contactCentre">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 '}`} href="/contactCentre">
                         Contact Centre
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/backOffice">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200'}`} href="/backOffice">
                         Back Office
                     </Link>
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/automation">
@@ -74,7 +74,7 @@ export default function App() {
                 </ul>
             </div>
             <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
-                <Link href="/models" tabIndex={0} role="button" className={`${pathname === '/models' ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white px-[15px] py-[7px] rounded' : 'text-white font-medium hover:text-[#0C71C3]'}`}>Models</Link>
+                <Link href="/models" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Models</Link>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-base-100 text-black lg:w-48 p-4 font-semibold space-y-4">
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/comprehensive">
                         Comprehensive
@@ -102,7 +102,7 @@ export default function App() {
                                 <ul>
                                     {menuItem.links.map((item, subIndex) => (
                                         <li className="pt-6" key={subIndex}>
-                                            <Link className={`${pathname === `${item.link}` ? 'text-[#0C71C3] lg:bg-[#0C71C3] font-semibold lg:text-white rounded text-left' : 'text-left text-white font-medium hover:text-[#0C71C3]'}`} onClick={() => setIsOpen(false)} href={item.link}>{item.label}</Link>
+                                            <Link className="text-white hover:text-[#0C71C3] font-medium" onClick={() => setIsOpen(false)} href={item.link}>{item.label}</Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -117,7 +117,7 @@ export default function App() {
     return (
         <div className={`fixed z-10 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
             <div className="flex justify-between items-center xl:px-12 lg:px-8 px-4 2xl:px-16">
-                <Image src={logooo} alt="logo" width={60} />
+                <Link href="/"><Image src={logooo} alt="logo" width={60} /></Link>
                 <div className="hidden lg:inline-block">
                     {navItems}
                 </div>
