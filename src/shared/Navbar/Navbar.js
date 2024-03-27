@@ -116,8 +116,8 @@ export default function App() {
 
     return (
         <div className={`fixed z-10 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
-            <div className="flex justify-between items-center xl:px-12 lg:px-8 px-4 2xl:px-16">
-                <Link href="/"><Image src={logooo} alt="logo" width={90} /></Link>
+            <div className="flex justify-between items-center max-w-screen-xl mx-auto">
+                <Link href="/"><Image src={logooo} alt="logo" width={70} /></Link>
                 <div className="hidden lg:inline-block">
                     {navItems}
                 </div>

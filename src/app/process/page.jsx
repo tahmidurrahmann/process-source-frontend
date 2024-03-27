@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./Process.css"
+import "./process.css"
 import { FaCheck } from "react-icons/fa6";
 import ac1 from "../../assets/ac1.png";
 import ac2 from "../../assets/ac2.png";
