@@ -14,12 +14,12 @@ const Banner = () => {
                             <p className="text-center xl:text-left">Lower Costs.</p>
                             <p className="text-center xl:text-left">Any Team.</p>
                         </div>
-                        <p className="text-lg w-3/4 md:w-1/2 text-center xl:text-left pb-6">The Process Source difference is all about quality. Schedule time to discuss how you could save 70%+, remove distractions, and watch your KPIs soar. </p>
+                        <p className="w-3/4 md:w-1/2 text-center xl:text-left pb-6 font-inter">The Process Source difference is all about quality. Schedule time to discuss how you could save 70%+, remove distractions, and watch your KPIs soar. </p>
                         <button className="bg-[#6366F1] p-4 rounded">Free Consultation</button>
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full h-full top-4/5 md:top-3/4 px-4">
+            <div className="absolute lg:inline-block hidden w-full md:top-3/4 px-4">
                 <div className="max-w-screen-xl mx-auto">
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                         <div className="bg-[#192230] p-4 rounded-lg flex flex-col justify-center items-center">
@@ -27,21 +27,21 @@ const Banner = () => {
                                 <Image src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/10/sr-icon-1-1.svg" alt="j" width={50} height={50} />
                             </div>
                             <h1 className="pb-2 text-2xl font-bold text-center">Cloud Services</h1>
-                            <p className="text-center">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
+                            <p className="text-center font-inter">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
                         </div>
                         <div className="bg-[#6366f1] text-white p-7 rounded-lg flex flex-col justify-center items-center">
                             <div className="bg-gray-300 p-3 mb-4 rounded-full">
                                 <Image src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/10/sr-icon-1-2.svg" alt="j" width={50} height={50} />
                             </div>
                             <h1 className="pb-2 text-2xl font-bold text-center">UI Development</h1>
-                            <p className="text-center">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
+                            <p className="text-center font-inter">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
                         </div>
                         <div className="bg-[#192230] p-7 rounded-lg flex flex-col justify-center items-center">
                             <div className="bg-gray-300 p-3 mb-4 rounded-full">
                                 <Image src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/10/sr-icon-1-3.svg" alt="j" width={50} height={50} />
                             </div>
                             <h1 className="pb-2 text-2xl font-bold text-center">Digital Marketing</h1>
-                            <p className="text-center">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
+                            <p className="text-center font-inter">Deliver plug commerce with dynamic is expertise. leading edge products with business models</p>
                         </div>
                     </div>
                 </div>

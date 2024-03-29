@@ -7,7 +7,7 @@ import Link from "next/link";
 const Expertise = () => {
     return (
         <div className="text-white">
-            <div className="text-white max-w-screen-2xl ml-auto">
+            <div className="text-white max-w-screen-xl mx-auto">
                 <div className="px-12 2xl:px-0">
                     <h1 className="font-extrabold text-2xl xl:text-5xl pt-12 pb-4">Our expertise</h1>
                     <p className="pb-12">We’ve helped transform businesses—drawing on our global expertise, well-defined processes and continuous improvement approach.</p>

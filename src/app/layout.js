@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Your description" />
         {/* Other metadata */}
       </Head>
-      <body className="font-dmSans">
+      <body className="font-play">
         <Navbar/>
         {children}
         <Footer />

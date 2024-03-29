@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="wave" id="wave3"></div>
                     <div className="wave" id="wave4"></div>
                 </div>
-                <div className="py-16 lg:px-8 w-4/5 space-y-6">
+                <div className="py-16 lg:px-8 w-4/5 space-y-6 max-w-screen-xl">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <div className="">
                             <Image src={logo} alt="logo" width={150} />

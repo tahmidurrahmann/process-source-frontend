@@ -2,7 +2,7 @@
 
 const nextConfig = {
     images: {
-      domains: ['acquirebpo.com'],
+      domains: ['acquirebpo.com', 'cdn-llelf.nitrocdn.com'],
     },
   };
   
