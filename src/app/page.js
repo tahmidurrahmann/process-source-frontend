@@ -4,6 +4,7 @@ import DepartmentToLearn from "@/pages/Home/DepartmentToLearn/DepartmentToLearn"
 import Services from "@/pages/Home/Services/Services";
 import Engagement from "@/pages/Home/Engagement/Engagement";
 import Expertise from "@/pages/Home/Expertise/Expertise";
+import DepartmentToLearnn from "@/pages/Home/DepartmentToLearnn/DepartmentToLearnn";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ClientsInfo />
       <Engagement />
       <Expertise />
+      <DepartmentToLearnn />
     </main>
   );
 }

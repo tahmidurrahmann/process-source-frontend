@@ -61,7 +61,7 @@ export default function App() {
             </div>
             <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
                 <Link href="/services" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Services</Link>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-base-100 text-black lg:w-48 p-4 font-semibold space-y-4">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-white text-black lg:w-48 p-4 font-semibold space-y-4">
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 '}`} href="/contactCentre">
                         Contact Centre
                     </Link>
@@ -75,7 +75,7 @@ export default function App() {
             </div>
             <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
                 <Link href="/models" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Models</Link>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-base-100 text-black lg:w-48 p-4 font-semibold space-y-4">
+                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow text-black lg:w-48 p-4 font-semibold space-y-4 bg-white">
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/comprehensive">
                         Comprehensive
                     </Link>
@@ -115,7 +115,7 @@ export default function App() {
     );
 
     return (
-        <div className={`fixed z-10 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
+        <div className={`fixed z-10 px-4 w-full ${scrolled ? "bg-[#1515154D]" : "bg-[#1515154D]"}`}>
             <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                 <Link href="/"><Image src={logooo} alt="logo" width={70} /></Link>
                 <div className="hidden lg:inline-block">

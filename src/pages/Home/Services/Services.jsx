@@ -5,8 +5,8 @@ const Services = () => {
     return (
         <div className="bg-[#1F2937] py-16">
             <h1 className="text-[#6366F1] text-center">OUR LATEST SERVICES</h1>
-            <p className="text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pt-4">WHAT KIND OF SERVICES</p>
-            <p className="text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pb-4 pt-1">WE ARE OFFERING</p>
+            <p className="text-2xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pt-4">WHAT KIND OF SERVICES</p>
+            <p className="text-2xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pb-4 pt-1">WE ARE OFFERING</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-xl mx-auto mt-10 px-4 2xl:px-0">
                 <div className="bg-[#111827] p-10 rounded-lg flex flex-col justify-start items-start space-y-2 hover:bg-[#6366f1]">
                     <div className="bg-[#EFF1F5] p-6 mb-4 rounded-full">

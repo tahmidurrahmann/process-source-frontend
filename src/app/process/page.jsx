@@ -15,13 +15,13 @@ const ProcessHome = () => {
     return (
         <div>
             <div className="background14 text-white">
-                <div className="max-w-screen-2xl mx-auto xl:space-y-3 py-28 lg:py-48">
+                <div className="max-w-screen-xl mx-auto xl:space-y-3 py-28 lg:py-48">
                     <h1 className="2xl:px-0 text-left font-black text-2xl md:text-3xl lg:text-5xl px-12 md:px-16">Scalable Work from Home solutions</h1>
                     <p className="2xl:px-0 text-sm pt-4 lg:text-xl px-12 md:px-16 md:w-3/4 lg:w-4/5">Flexible solutions to keep your contact centre or back-office operations up and running remotely with Process@Home.</p>
                     <button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16 2xl:mx-0">talk to us</button>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 justify-center max-w-screen-2xl mx-auto font-extralight pt-12 2xl:px-0 md:px-16">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 justify-center max-w-screen-xl mx-auto font-extralight pt-12 2xl:px-0 md:px-16">
                 <div className="px-12">
                     <Image src={ac1} alt="ac" className="w-24 md:w-72 2xl:w-24" />
                 </div>
