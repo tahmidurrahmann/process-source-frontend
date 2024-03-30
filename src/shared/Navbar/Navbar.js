@@ -6,12 +6,10 @@ import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import logooo from "../../assets/logooo.png"
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FaAngleDown } from "react-icons/fa6";
 
 export default function App() {
-    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [openMenuIndex, setOpenMenuIndex] = useState(null);
@@ -59,36 +57,36 @@ export default function App() {
                     Home
                 </Link>
             </div>
-            <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
-                <Link href="/services" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Services</Link>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow bg-white text-black lg:w-48 p-4 font-semibold space-y-4">
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 '}`} href="/contactCentre">
+            <div className="dropDone">
+                <button><Link href="/services" tabIndex={0} className="text-white hover:text-[#0C71C3] font-medium flex items-center gap-1">Services <FaAngleDown /></Link></button>
+                <div className="dropdown-content rounded">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mt-4' : 'duration-200 mt-4 hover:text-[#0C71C3]'}`} href="/contactCentre">
                         Contact Centre
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200'}`} href="/backOffice">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 hover:text-[#0C71C3]'}`} href="/backOffice">
                         Back Office
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/automation">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mb-4' : 'duration-200 hover:text-[#0C71C3] mb-4'}`} href="/automation">
                         Automation & AI
                     </Link>
-                </ul>
+                </div>
             </div>
-            <div onClick={() => setOpen((prev) => !prev)} className="dropdown dropdown-hover dropdown-bottom dropdown-end lg:inline-block hidden">
-                <Link href="/models" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium">Models</Link>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu shadow text-black lg:w-48 p-4 font-semibold space-y-4 bg-white">
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/comprehensive">
+            <div className="dropDone">
+                <button><Link href="/models" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium flex items-center gap-1">Models <FaAngleDown /></Link></button>
+                <div className="dropdown-content rounded">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mt-4' : 'duration-200 mt-4 hover:text-[#0C71C3]'}`} href="/comprehensive">
                         Comprehensive
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/coSourcing">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 hover:text-[#0C71C3]'}`} href="/coSourcing">
                         Co-Sourcing
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/process">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 hover:text-[#0C71C3]'}`} href="/process">
                         PROCESS@HOME
                     </Link>
-                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3]' : 'duration-200 text-[#0C71C3]'}`} href="/workspaces">
+                    <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mb-4' : 'duration-200 hover:text-[#0C71C3] mb-4'}`} href="/workspaces">
                         WORKSPACES
                     </Link>
-                </ul>
+                </div>
             </div>
             <div className="text-white inline-block lg:hidden w-full">
                 {menuItems.map((menuItem, index) => (
