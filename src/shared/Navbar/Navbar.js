@@ -57,7 +57,7 @@ export default function App() {
                     Home
                 </Link>
             </div>
-            <div className="dropDone">
+            <div className="hidden lg:inline-block"><div className="dropDone">
                 <button><Link href="/services" tabIndex={0} className="text-white hover:text-[#0C71C3] font-medium flex items-center gap-1">Services <FaAngleDown /></Link></button>
                 <div className="dropdown-content rounded">
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mt-4' : 'duration-200 mt-4 hover:text-[#0C71C3]'}`} href="/contactCentre">
@@ -70,8 +70,8 @@ export default function App() {
                         Automation & AI
                     </Link>
                 </div>
-            </div>
-            <div className="dropDone">
+            </div></div>
+            <div className="hidden lg:inline-block"><div className="dropDone">
                 <button><Link href="/models" tabIndex={0} role="button" className="text-white hover:text-[#0C71C3] font-medium flex items-center gap-1">Models <FaAngleDown /></Link></button>
                 <div className="dropdown-content rounded">
                     <Link onClick={() => setIsOpen(false)} className={`text-black ${open ? 'duration-500 hover:text-[#0C71C3] mt-4' : 'duration-200 mt-4 hover:text-[#0C71C3]'}`} href="/comprehensive">
@@ -87,7 +87,7 @@ export default function App() {
                         WORKSPACES
                     </Link>
                 </div>
-            </div>
+            </div></div>
             <div className="text-white inline-block lg:hidden w-full">
                 {menuItems.map((menuItem, index) => (
                     <div className="py-4" key={index}>
