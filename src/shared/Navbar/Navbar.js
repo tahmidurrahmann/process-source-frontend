@@ -4,7 +4,7 @@ import Drawer from "./Drawer";
 import "./styles.css";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
-import logooo from "../../assets/logooo.png"
+import logooo from "../../assets/processsourcelogo.png"
 import Image from "next/image";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FaAngleDown } from "react-icons/fa6";

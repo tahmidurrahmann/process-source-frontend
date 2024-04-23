@@ -1,6 +1,6 @@
 import "./Footer.css";
 import Image from "next/image";
-import logo from "../../assets/logooo.png"
+import logo from "../../assets/processsourcelogo.png";
 
 const Footer = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="py-16 lg:px-8 w-4/5 space-y-6 max-w-screen-xl">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <div className="">
-                            <Image src={logo} alt="logo" width={150} />
+                            <Image src={logo} alt="logo" width={100} />
                         </div>
 
                         <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
