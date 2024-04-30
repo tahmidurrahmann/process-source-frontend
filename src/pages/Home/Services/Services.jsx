@@ -3,7 +3,7 @@ import { LuMoveRight } from "react-icons/lu";
 
 const Services = () => {
     return (
-        <div className="bg-[#1F2937] py-16">
+        <div className="bg-[#1F2937] py-12 lg:pt-48 lg:pb-32">
             <h1 className="text-[#6366F1] text-center">OUR LATEST SERVICES</h1>
             <p className="text-2xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pt-4">WHAT KIND OF SERVICES</p>
             <p className="text-2xl md:text-4xl lg:text-5xl text-center mx-auto font-bold pb-4 pt-1">WE ARE OFFERING</p>

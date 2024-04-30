@@ -1,5 +1,5 @@
 "use client";
-import { FaArrowRight, FaCheck } from "react-icons/fa6";
+// import { FaArrowRight, FaCheck } from "react-icons/fa6";
 import "./departmentToLearn.css";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { useState } from "react";
