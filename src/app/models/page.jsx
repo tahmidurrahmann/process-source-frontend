@@ -12,10 +12,17 @@ const ModelsPage = () => {
         <div>
             <div className="background7 min-h-screen text-white">
                 <h1 className="text-center font-extrabold text-4xl pt-24 lg:pt-40 lg:text-6xl">Models</h1>
-                <p className="text-sm pt-4 lg:text-2xl text-center px-12 md:w-3/4 xl:w-1/2  2xl:w-1/3 mx-auto">Outsource the way you want with our range of engagement models—from traditional site-based operations to Work from Home.</p>
+                <p className="text-sm pt-4 lg:text-2xl text-center px-12 md:w-3/4 xl:w-1/2  2xl:w-1/3 mx-auto">Experience the freedom to tailor your outsourcing approach with our versatile range of
+                    engagement models, offering options from traditional site-based operations to the convenience of
+                    Work from Home setups.</p>
                 <div className="flex flex-col max-w-screen-lg mx-auto lg:flex-row justify-between items-center text-center pt-28 pb-12 px-12 gap-8 lg:gap-4">
                     <div className="flex flex-col items-center gap-4">
                         <Image src="https://acquirebpo.com/wp-content/uploads/img/ACQ-Comprehensive-icon-white.png" width={100} height={100} alt="alt" />
+                        <p>Outsource the traditional way <br />
+                            Comprehensive, fully-managed operations <br />
+                            Opt for our Comprehensive Outsourcing model, and we&#39;ll handle everything for you,
+                            encompassing operations management, facilities, technology, and shared support services,
+                            leaving you free to focus on your core objectives.</p>
                         <Link href="/comprehensive"><button className="text-white border-4 border-white mt-4 text-sm hover:bg-white hover:text-[#0C71C3] px-5 py-2 rounded-full font-bold uppercase mx-12 md:mx-16 2xl:mx-0">Comprehensive</button></Link>
                     </div>
                     <div className="flex flex-col items-center gap-4">
